@@ -1,0 +1,12 @@
+:root{
+    --primary-color: #1abc9c;
+    --second-color: #2c3e50;
+}
+.navbarBG{
+    background-color: var(--second-color);
+}
+
+.active.nav-link{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
