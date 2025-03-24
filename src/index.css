@@ -1,6 +1,7 @@
 :root{
     --primary-color: #1abc9c;
     --second-color: #2c3e50;
+    --darker-second-color: #1a252f;
 }
 .navbarBG{
     background-color: var(--second-color);
@@ -9,4 +10,31 @@
 .active.nav-link{
     background-color: var(--primary-color);
     border-radius: 10px;
+}
+
+.footer{
+    background-color: var(--second-color);
+    padding: 40px;
+}
+
+.footer h3 {
+    padding-top: 20px;
+}
+
+.footer .icon {
+    padding: 10px;
+    width: 38px;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.card-group {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.copyRights{
+    background-color: var(--darker-second-color);
+    color: #f0f8ff ;
 }
