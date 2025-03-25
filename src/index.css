@@ -12,6 +12,32 @@
     border-radius: 10px;
 }
 
+
+.component-section{
+    height: 80vh;
+    background-color: var(--primary-color);
+}
+
+.avatar-img{
+    width: 250px;
+}
+
+.under-line{
+    background-color: white;
+    height: 4px;
+    width: 80px;
+}
+
+.star{
+    width: 18px;
+    transform: translateY(-4px);
+}
+
+
+
+
+
+
 .footer{
     background-color: var(--second-color);
     padding: 40px;
