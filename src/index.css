@@ -1,10 +1,10 @@
 :root{
     --primary-color: #1abc9c;
-    --second-color: #2c3e50;
-    --darker-second-color: #1a252f;
+    --secondry-color: #2c3e50;
+    --darker-secondry-color: #1a252f;
 }
 .navbarBG{
-    background-color: var(--second-color);
+    background-color: var(--secondry-color);
 }
 
 .active.nav-link{
@@ -12,6 +12,13 @@
     border-radius: 10px;
 }
 
+.whiteBG-secondry-title-component-section{
+    background-color: white;
+}
+
+.whiteBG-secondry-title-component-section h2 {
+    color: var(--secondry-color);
+}
 
 .component-section{
     height: 80vh;
@@ -20,6 +27,12 @@
 
 .avatar-img{
     width: 250px;
+}
+
+.under-line-secondry-color{
+    background-color: var(--secondry-color);
+    height: 4px;
+    width: 80px;
 }
 
 .under-line{
@@ -33,13 +46,37 @@
     transform: translateY(-4px);
 }
 
+.portfolio-item img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-item svg{
+    width: 20%;
+}
+
+.portfolio-item-img{
+    transition: all 0.3s;
+}
 
 
+.portfolio-item-overlay{
+    background-color: var(--primary-color);
+    position: absolute;
+    inset: 0;
+    z-index: 999;
+    transition: all 0.4s ease-out;
+    opacity: 0;
+    border-radius: 10px;
+}
 
+.portfolio-item .portfolio-item-img:hover .portfolio-item-overlay{
+    opacity: 0.9;
+}
 
 
 .footer{
-    background-color: var(--second-color);
+    background-color: var(--secondry-color);
     padding: 40px;
 }
 
@@ -61,6 +98,6 @@
 }
 
 .copyRights{
-    background-color: var(--darker-second-color);
+    background-color: var(--darker-secondry-color);
     color: #f0f8ff ;
 }
