@@ -1,18 +1,19 @@
-:root{
+:root {
     --primary-color: #1abc9c;
     --secondry-color: #2c3e50;
     --darker-secondry-color: #1a252f;
 }
-.navbarBG{
+
+.navbarBG {
     background-color: var(--secondry-color);
 }
 
-.active.nav-link{
+.active.nav-link {
     background-color: var(--primary-color);
     border-radius: 10px;
 }
 
-.whiteBG-secondry-title-component-section{
+.whiteBG-secondry-title-component-section {
     background-color: white;
 }
 
@@ -20,47 +21,47 @@
     color: var(--secondry-color);
 }
 
-.component-section{
+.component-section {
     height: 80vh;
     background-color: var(--primary-color);
 }
 
-.avatar-img{
+.avatar-img {
     width: 250px;
 }
 
-.under-line-secondry-color{
+.under-line-secondry-color {
     background-color: var(--secondry-color);
     height: 4px;
     width: 80px;
 }
 
-.under-line{
+.under-line {
     background-color: white;
     height: 4px;
     width: 80px;
 }
 
-.star{
+.star {
     width: 18px;
     transform: translateY(-4px);
 }
 
-.portfolio-item img{
+.portfolio-item img {
     width: 100%;
     border-radius: 10px;
 }
 
-.portfolio-item svg{
+.portfolio-item svg {
     width: 20%;
 }
 
-.portfolio-item-img{
+.portfolio-item-img {
     transition: all 0.3s;
 }
 
 
-.portfolio-item-overlay{
+.portfolio-item-overlay {
     background-color: var(--primary-color);
     position: absolute;
     inset: 0;
@@ -70,12 +71,62 @@
     border-radius: 10px;
 }
 
-.portfolio-item .portfolio-item-img:hover .portfolio-item-overlay{
+.portfolio-item .portfolio-item-img:hover .portfolio-item-overlay {
     opacity: 0.9;
 }
 
+.input-group {
+    font-size: 1.25rem;
+    position: relative;
+}
 
-.footer{
+.my-input {
+    all: unset;
+    text-align: left;
+    color: var(--secondry-color);
+    padding: 1rem;
+    border: 1px solid var(--secondry-color);
+    border-radius: 10px !important;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.my-label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: large;
+    color: var(--secondry-color);
+    pointer-events: none;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.my-input:focus {
+    border: 1px solid var(--primary-color);
+}
+
+.my-input:is(:focus, :valid)~label {
+    transform: translateY(-120%) scale(0.7);
+    background-color: white;
+    padding-inline: 0.3rem;
+    color: var(--primary-color);
+}
+
+.my-btn {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.my-btn:hover {
+    transform: scale(0.95);
+}
+
+.footer {
     background-color: var(--secondry-color);
     padding: 40px;
 }
@@ -97,7 +148,7 @@
     flex-flow: row wrap;
 }
 
-.copyRights{
+.copyRights {
     background-color: var(--darker-secondry-color);
-    color: #f0f8ff ;
+    color: #f0f8ff;
 }

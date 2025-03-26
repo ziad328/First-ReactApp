@@ -9,20 +9,22 @@ import NotFound404 from './components/not_found_page/NotFound404'
 
 
 const router = createBrowserRouter([
-  { path:'*' , element: <NotFound404/>},
-  { path:'' , element: <Layout/> , children: [
-    { path:'' , element: <Home/>},
-    { path:'about' , element: <About/>},
-    { path:'portfolio' , element: <Portfolio/>},
-    { path:'contact' , element: <Contact/>},
-  ]}
+  { path: '*', element: <NotFound404 /> },
+  {
+    path: '', element: <Layout />, children: [
+      { path: '', element: <Home /> },
+      { path: 'about', element: <About /> },
+      { path: 'portfolio', element: <Portfolio /> },
+      { path: 'contact', element: <Contact /> },
+    ]
+  }
 ])
 
 function App() {
 
   return (
     <>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
   )
 }
